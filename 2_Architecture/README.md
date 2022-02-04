@@ -1,0 +1,4 @@
+## Design
+* structural
+* Behavioural
+* Flowchart
