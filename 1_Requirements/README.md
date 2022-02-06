@@ -13,6 +13,5 @@
 # Low level requirments
     The application will ask to enter bike details like bike name,bike year/model,CC.
 
-
-
-## 5w 1h
+# SWOT 
+# 4W 1H
