@@ -12,6 +12,7 @@
 #include<stdlib.h>
 #include "main.h"
 
+
     char bikerbikename[40]; /// string to store name of the employee
  
     long int recsize; /// size of each record of employee
