@@ -1,11 +1,11 @@
 /**
  * @file main.h
- * @author raaga.vardhini@ltts.com
+ * @author your name (you@domain.com)
  * @brief 
  * @version 0.1
- * @date 2021-09-08
+ * @date 2022-02-09
  * 
- * @copyright Copyright (c) 2021
+ * @copyright Copyright (c) 2022
  * 
  */
 #ifndef _MAIN_H_
@@ -15,5 +15,6 @@
 #include<string.h>
 #include "function.c"
 #include <stdlib.h>
+
 
 #endif

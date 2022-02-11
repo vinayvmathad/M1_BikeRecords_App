@@ -8,6 +8,7 @@
  * @copyright Copyright (c) 2022
  * 
  */
+#include<stdio.h>
 #include "main.h"
 void flush()
 {
@@ -24,10 +25,10 @@ void flush()
     };
     struct biker b; /// structure variable creation
  
- void  Add_Record(){
+ void  Add_BikeRecord(){
      fseek(fp,0,SEEK_END); /// search the file and move cursor to end of the file
-                                        /// here 0 indicates moving 0 distance from the end of the file
-                another = 'y';
+                          /// here 0 indicates moving 0 distance from the end of the file
+             another = 'y';
                 while(another == 'y'){ /// if user want to add another record
                     flush();
                     printf("\nEnter bikename: ");
@@ -43,5 +44,12 @@ void flush()
                     fflush(stdin);
                     scanf("\n%c", &another);
                 }
+   
+            
  }
+ 
+ 
+
+
+
  
