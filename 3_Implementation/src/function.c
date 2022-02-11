@@ -1,6 +1,6 @@
 /**
  * @file function.c
- * @author your name (you@domain.com)
+ * @author Vinaymathad(vinay.mathad@ltts.com)
  * @brief 
  * @version 0.1
  * @date 2022-02-09
@@ -18,6 +18,7 @@ void flush()
     long int recsize; /// size of each record of bikelist
      FILE *fp, *ft; /// file pointers
     char another, choice;
+
     struct biker{
         char bikename[40]; ///name of bike
         int year; /// manufacture/production of bike
@@ -25,7 +26,7 @@ void flush()
     };
     struct biker b; /// structure variable creation
  
- void  Add_BikeRecord(){
+ void Add_BikeRecord(){
      fseek(fp,0,SEEK_END); /// search the file and move cursor to end of the file
                           /// here 0 indicates moving 0 distance from the end of the file
              another = 'y';

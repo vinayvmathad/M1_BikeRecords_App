@@ -1,6 +1,6 @@
 /**
  * @file main.h
- * @author your name (you@domain.com)
+ * @author vinay mathad vinay.mathad@ltts.com)
  * @brief 
  * @version 0.1
  * @date 2022-02-09
