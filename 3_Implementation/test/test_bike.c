@@ -35,8 +35,5 @@ int main()
 void test_Add_Record() {
   TEST_ASSERT_EQUAL(dominor400 2019 373, Add_Record(dominor400,2019,373));
   
-  /* Dummy fail*/
-  
-  
-  TEST_ASSERT_EQUAL(12 raaga 35000, Add_Record(raaga, 12, 7500));*/
+
 }
