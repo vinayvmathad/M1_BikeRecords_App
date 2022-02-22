@@ -1,30 +1,22 @@
-#Target : Dependencies
-#<TAB>commands
-PROJECT_NAME= M1_BikeRecords_App
-SRC=bikemain.c
-src/function.c
-# creatinng header files
-INC=-Iinc\
-
+PROJ_NAME = BikeRecords
+SRC = src/function.c  src/unity.c src/main.c src/test_demo.c
 ifdef OS
-	RM=del /q
-	FixPath = $(subst /,\,$l)
-	EXEC= exe
+	RM = del /q
+	FixPath= $(subst /,\,$l)
+	EXEC=exe 
 else
-   ifeq ($(shell uname), Linux)
-      RM = rm -rf
-      FixPath = $1
-	  EXEC= out
-   endif
-endif
+	ifeq ($(shell uname), Linux)
+		RM = rm -rf
+		FixPath = $Linux
+		EXEC = out
+	endif
+endif	
 
-
-
- Build: 
-	gcc -I $(SRC) $(INC)  -o $(call FixPath, ./$(PROJECT_NAME).$(EXEC))
+Build :$(SRC)
+	gcc $(SRC) -Iinc -o $(call FixPath,$(PROJ_NAME).$(EXEC))
 
 Run : Build
-	./$(call FixPath,$(PROJECT_NAME).$(EXEC))
+	./$(call FixPath,$(PROJ_NAME).$(EXEC))
 
-Clean: 
-	$(RM) $(call FixPath,*.out)
+Clean :
+	$(RM) $(call FixPath,$(BUILD_DIR)/*.out)
