@@ -18,7 +18,7 @@ void test_displayAllRecords(void)
 int test_main() // main function for test_demo file
 {
     UNITY_BEGIN(); // Initialize Unity Test 
-    RUN_TEST(test_displayRecord); // Test to chech if contacts exist
-    RUN_TEST(test_displayAllRecords); // test to display all contacts
+    RUN_TEST(test_displayRecord); // Test to chech if recordss exist
+    RUN_TEST(test_displayAllRecords); // test to display all records
     return UNITY_END(); // End Unity Test 
 }
